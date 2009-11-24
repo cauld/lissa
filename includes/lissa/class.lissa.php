@@ -15,7 +15,7 @@ class Lissa extends YAHOO_util_Loader {
     public function __construct ($yuiVersion, $cacheKey=null, $modules=null, $noYUI=false) {
     	parent::__construct($yuiVersion, null, $modules);     
         $this->base = "/includes/js/yui/lib/".$yuiVersion."/build/";
-        $this->minifyBasePath = URL_TO_MIN . "/b=" . MINIFY_BASE . "&f=";
+        $this->minifyBasePath = URL_TO_MIN . "/index.php?b=" . MINIFY_BASE . "&f=";
 	}
 	
 	protected function buildComboUrl ($dependencyData, $type) {
