@@ -9,9 +9,9 @@ You can read about the benefits of Minify on their project page, but to sum it u
 
 ## SETUP ##
 
-1) Place Lissa somewhere under DOCUMENT_ROOT
-2) Alter includes/lissa/config.inc.php as needed
-3) Set the proper $min_cachePath in includes/minify/min/config.php (and perhaps $min_documentRoot if things don't work as is)
+1. Place Lissa somewhere under DOCUMENT_ROOT
+2. Alter includes/lissa/config.inc.php as needed
+3. Set the proper $min_cachePath in includes/minify/min/config.php (and perhaps $min_documentRoot if things don't work as is)
 
 ## HOW DOES IT WORK ##
 
