@@ -31,6 +31,8 @@ $customModules = array(
 //Get a new Lissa instance which includes our custom metadata along with the base YUI metadata
 $loader = new Lissa("2.8.0r4", null, $customModules);
 $loader->load("fonts", "sampleData", "customCSS");
+$css = $loader->css();
+$js  = $loader->scripts();
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -40,7 +42,7 @@ $loader->load("fonts", "sampleData", "customCSS");
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<title>YUI PHP Loader + Minify: Keep the combo!</title>
-	<?PHP echo $loader->css(); ?>
+	<?PHP echo $css; ?>
 </head>
 <body>
     <h1>Lissa</h1>
@@ -64,17 +66,21 @@ $loader->load("fonts", "sampleData", "customCSS");
         <li class="first">This list starts with one static list item</li>
     </ul>
     
+    <p>The combo urls built by Lissa for this page where:</p>
+    <form>
+        <textarea class="ta"><?PHP echo $css . "\r\n" . $js; ?></textarea>
+    </form>
+    
     <br>
     <p><em>NOTES:</em></p>
     
     <ul>
         <li>This example is very similar to one shipped with the YUI PHP Loader.  The major diference is the use of Lissa instead of using the 
         YAHOO_util_Loader class directly.  Doing so allows us to create combo urls which mix YUI resources with local ones.</li>
-        <li>View source to see the combo urls for this example.</li>
         <li>Lissa is open source.  Get the code on <a href="http://github.com/cauld/lissa">Github</a>.</li>
         <li>Enjoy!</li>
     </ul>
 
-    <?PHP echo $loader->script(); ?>
+    <?PHP echo $js; ?>
 </body>
 </html>
