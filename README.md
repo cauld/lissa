@@ -3,7 +3,7 @@ Licensed under the MIT license
  
 # Lissa README #
 
-Lissa is a generic CSS and JavaScript loading utility.  Lissa is an extension of the ([http://developer.yahoo.com/yui/phploader/](YUI PHP Loader)) aimed at solving one of the current loader limitations; combo loading.  YUI PHP Loader ships with a combo loader that is capable of reducing HTTP requests and increasing performance by outputting all the YUI JavaScript and/or CSS requirements as a single request per resource type.  Meaning even if you needed 8 YUI components which ultimately boil down to say 13 files you would still only make 2 HTTP requests; one for the CSS and another for the JavaScript.  That's great, but what about custom non-YUI resources.  YUI PHP Loader will load them, but it loads them as separate includes and thus they miss out on benefits of the combo service and the number of HTTP requests for the page increases.  Lissa works around this limitation by using the YUI PHP Loader to handle the loading and sort of YUI and/or custom resource dependencies and pairs that functional with ([Minify](http://code.google.com/p/minify)).
+Lissa is a generic CSS and JavaScript loading utility.  Lissa is an extension of the [YUI PHP Loader](http://developer.yahoo.com/yui/phploader/) aimed at solving one of the current loader limitations; combo loading.  YUI PHP Loader ships with a combo loader that is capable of reducing HTTP requests and increasing performance by outputting all the YUI JavaScript and/or CSS requirements as a single request per resource type.  Meaning even if you needed 8 YUI components which ultimately boil down to say 13 files you would still only make 2 HTTP requests; one for the CSS and another for the JavaScript.  That's great, but what about custom non-YUI resources.  YUI PHP Loader will load them, but it loads them as separate includes and thus they miss out on benefits of the combo service and the number of HTTP requests for the page increases.  Lissa works around this limitation by using the YUI PHP Loader to handle the loading and sort of YUI and/or custom resource dependencies and pairs that functional with [Minify](http://code.google.com/p/minify).
 
 You can read about the benefits of Minify on their project page, but to sum it up.... we get automatic minification, compression, caching, proper setting of content headers, etc.  This means that you now have the potential to serve up all JavaScript and CSS requirements for a page with just 2 optimized requests.
 
@@ -60,7 +60,7 @@ If you are paying close attention you'll notice the handoff to Minify and the co
 
 For a simple example see index.php.
 
-For a more complex integration done around the same idea check out the ([Aliro Resource Loader](http://docs.aliro.org/AliroResourceLoader)).  Lissa is a more generic spinoff of the aliroResourceLoader class.
+For a more complex integration done around the same idea check out the [Aliro Resource Loader](http://docs.aliro.org/AliroResourceLoader).  Lissa is a more generic spinoff of the aliroResourceLoader class.
 
 ## WHAT's NEXT? ##
 
