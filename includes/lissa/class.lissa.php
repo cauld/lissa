@@ -1,6 +1,6 @@
 <?PHP
 /*
- * Lissa
+ * Lissa (http://github.com/cauld/lissa)
  * Copyright (c) 2009 Chad Auld (opensourcepenguin.net)
  * Licensed under the MIT license.
  */

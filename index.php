@@ -1,4 +1,10 @@
 <?PHP
+/*
+ * Lissa (http://github.com/cauld/lissa)
+ * Copyright (c) 2009 Chad Auld (opensourcepenguin.net)
+ * Licensed under the MIT license.
+ */
+ 
 require 'includes/lissa/class.lissa.php';
 
 //Create a custom module metadata set
@@ -58,8 +64,16 @@ $loader->load("fonts", "sampleData", "customCSS");
         <li class="first">This list starts with one static list item</li>
     </ul>
     
-    <p><em>NOTE:</em> This example is very similar to one shipped with the YUI PHP Loader.  The major diference is the use of Lissa instead of using the 
-    YAHOO_util_Loader class directly.  Doing so allows us to create combo urls which mix YUI resources with local ones.</p>
+    <br>
+    <p><em>NOTES:</em></p>
+    
+    <ul>
+        <li>This example is very similar to one shipped with the YUI PHP Loader.  The major diference is the use of Lissa instead of using the 
+        YAHOO_util_Loader class directly.  Doing so allows us to create combo urls which mix YUI resources with local ones.</li>
+        <li>View source to see the combo urls for this example.</li>
+        <li>Lissa is open source.  Get the code on <a href="http://github.com/cauld/lissa">Github</a>.</li>
+        <li>Enjoy!</li>
+    </ul>
 
     <?PHP echo $loader->script(); ?>
 </body>
