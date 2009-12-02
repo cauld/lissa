@@ -16,7 +16,8 @@ You can read about the benefits of Minify on their project page, but to sum it u
 1. Place Lissa somewhere under DOCUMENT_ROOT
 2. Alter includes/lissa/config.inc.php as needed
 3. Set the proper $min_cachePath in includes/minify/min/config.php (and perhaps $min_documentRoot if things don't work as is)
-4. Drop YUI releases into the includes/js/yui/lib as needed.  YUI 2.8.0r4 is supplied by default.
+4. Drop additional YUI releases into the includes/js/yui/lib as needed.  YUI 2.8.0r4 is supplied by default.
+5. Drop corresponding YUI Metadata files into the includes/js/yui/lib/meta folder for each new YUI release you add (see step 4).  The metadata files are shipped with YUI PHP Loader and are located in the lib/meta folder.
 
 ## HOW DOES IT WORK ##
 
