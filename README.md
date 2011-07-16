@@ -7,10 +7,6 @@ Lissa is a generic CSS and JavaScript loading utility.  Lissa is an extension of
 
 You can read about the benefits of Minify on their project page, but to sum it up.... we get automatic minification, compression, caching, proper setting of content headers, etc.  This means that you now have the potential to serve up all JavaScript and CSS requirements for a page with just 2 optimized requests.
 
-## DEMO ##
-
-[Live demo](http://opensourcepenguin.net/experiments/lissa/)
-
 ## SETUP ##
 
 1. Place Lissa somewhere under DOCUMENT_ROOT
