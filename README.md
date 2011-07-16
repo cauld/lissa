@@ -1,7 +1,7 @@
 Copyright (c) 2009 Chad Auld ([opensourcepenguin.net](http://opensourcepenguin.net))
 Licensed under the MIT license
  
-# Lissa README # 
+# Lissa README
 
 Lissa is a generic CSS and JavaScript loading utility.  Lissa is an extension of the [YUI PHP Loader](http://developer.yahoo.com/yui/phploader/) aimed at solving one of the current loader limitations; combo loading.  YUI PHP Loader ships with a combo loader that is capable of reducing HTTP requests and increasing performance by outputting all the YUI JavaScript and/or CSS requirements as a single request per resource type.  Meaning even if you needed 8 YUI components which ultimately boil down to say 13 files you would still only make 2 HTTP requests; one for the CSS and another for the JavaScript.  That's great, but what about custom non-YUI resources.  YUI PHP Loader will load them, but it loads them as separate includes and thus they miss out on benefits of the combo service and the number of HTTP requests for the page increases.  Lissa works around this limitation by using the YUI PHP Loader to handle the loading and sort of YUI and/or custom resource dependencies and pairs that functional with [Minify](http://code.google.com/p/minify).
 
